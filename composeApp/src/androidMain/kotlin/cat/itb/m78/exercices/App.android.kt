@@ -1,4 +1,4 @@
-package cat.itb.m78.exercices
+package cat.itb.m78.exercices/home/lluc.velazquez.7e8/Documents/kotlin/kotlin-hello-world-LlucVelazquez-main/composeApp/src/commonMain/kotlin/androidx/compose/desktop/ui/tooling/preview
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
