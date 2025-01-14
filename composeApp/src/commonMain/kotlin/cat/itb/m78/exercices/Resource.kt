@@ -1,8 +1,7 @@
-package cat.itb.m78.exercices.theme
+package cat.itb.m78.exercices
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -15,10 +14,13 @@ import org.jetbrains.compose.resources.painterResource
 fun Resource() {
     Column() {
         Text("This is a resources string")
-        Image(
-            painter = painterResource(Res.drawable.generatedFace),
-            modifier = Modifier.size(100.dp),
-            contentDescription = null
-        )
+        Row {
+            Spacer(Modifier.width(40.dp))
+            Image(
+                painter = painterResource(Res.drawable.generatedFace),
+                modifier = Modifier.size(100.dp),
+                contentDescription = null
+            )
+        }
     }
 }
