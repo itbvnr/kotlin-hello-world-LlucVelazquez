@@ -9,23 +9,22 @@ import org.jetbrains.compose.resources.DrawableResource
 import org.jetbrains.compose.resources.InternalResourceApi
 
 private object CommonMainDrawable0 {
-  public val generatedFace: DrawableResource by 
-      lazy { init_generatedFace() }
+  public val generated: DrawableResource by 
+      lazy { init_generated() }
 }
 
 @InternalResourceApi
 internal fun _collectCommonMainDrawable0Resources(map: MutableMap<String, DrawableResource>) {
-  map.put("generatedFace", CommonMainDrawable0.generatedFace)
+  map.put("generated", CommonMainDrawable0.generated)
 }
 
-internal val Res.drawable.generatedFace: DrawableResource
-  get() = CommonMainDrawable0.generatedFace
+internal val Res.drawable.generated: DrawableResource
+  get() = CommonMainDrawable0.generated
 
-private fun init_generatedFace(): DrawableResource =
-    org.jetbrains.compose.resources.DrawableResource(
-  "drawable:generatedFace",
+private fun init_generated(): DrawableResource = org.jetbrains.compose.resources.DrawableResource(
+  "drawable:generated",
     setOf(
       org.jetbrains.compose.resources.ResourceItem(setOf(),
-    "composeResources/m78exercices.composeapp.generated.resources/drawable/generatedFace.png", -1, -1),
+    "composeResources/m78exercices.composeapp.generated.resources/drawable/generated.png", -1, -1),
     )
 )

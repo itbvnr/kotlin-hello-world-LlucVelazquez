@@ -12,6 +12,6 @@ internal fun App() = AppTheme {
     //HelloWorldApp()
     //Welcome()
     //Resource()
-    //ContactApp()
-    MessagesListApp()
+    ContactApp()
+    //MessagesListApp()
 }

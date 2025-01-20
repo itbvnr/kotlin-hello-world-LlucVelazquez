@@ -51,6 +51,7 @@ val messages = List(100){
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
+
 fun MessagesListApp() {
     Scaffold(
         topBar = {

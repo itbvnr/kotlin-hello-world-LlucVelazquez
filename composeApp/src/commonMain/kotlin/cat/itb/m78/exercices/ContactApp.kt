@@ -16,7 +16,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import m78exercices.composeapp.generated.resources.Res
-import m78exercices.composeapp.generated.resources.generatedFace
+import m78exercices.composeapp.generated.resources.generated
 import org.jetbrains.compose.resources.painterResource
 
 data class Contact(val fullName: String, val email: String, val phone: String)
@@ -28,7 +28,7 @@ fun ContactApp() {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center) {
         Image(
-            painter = painterResource(Res.drawable.generatedFace),
+            painter = painterResource(Res.drawable.generated),
             modifier = Modifier.size(100.dp).clip(CircleShape) ,
             contentDescription = null
         )
