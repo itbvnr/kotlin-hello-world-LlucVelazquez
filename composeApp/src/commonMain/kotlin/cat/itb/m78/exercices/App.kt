@@ -12,6 +12,7 @@ internal fun App() = AppTheme {
     //HelloWorldApp()
     //Welcome()
     //Resource()
-    ContactApp()
+    //ContactApp()
     //MessagesListApp()
+    GoodMoorningAndNight()
 }
