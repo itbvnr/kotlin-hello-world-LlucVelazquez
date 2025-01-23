@@ -14,5 +14,6 @@ internal fun App() = AppTheme {
     //Resource()
     //ContactApp()
     //MessagesListApp()
-    GoodMoorningAndNight()
+    //GoodMoorningAndNight()
+    SayHelloScreeenApp()
 }
