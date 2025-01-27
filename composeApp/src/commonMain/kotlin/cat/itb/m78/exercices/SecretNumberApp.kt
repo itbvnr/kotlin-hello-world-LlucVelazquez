@@ -2,12 +2,13 @@ package cat.itb.m78.exercices
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.AlertDialog
-import androidx.compose.material3.*
+import androidx.compose.material3.Button
+import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.*
 
 @Composable
-fun SayHelloScreeenApp() {
+fun SecretNumberApp() {
     var text by remember { mutableStateOf("Hello, World!") }
     var show by remember { mutableStateOf(false) }
     Column(){
@@ -27,5 +28,4 @@ fun SayHelloScreeenApp() {
             title = { Text("Hello $text") },
         )
     }
-
 }
