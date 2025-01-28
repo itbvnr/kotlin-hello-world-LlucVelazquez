@@ -9,11 +9,12 @@ import androidx.compose.runtime.*
 import kotlin.random.Random
 
 @Composable
-fun SecretNumberApp() {
+fun SecretNumberApp2() {
     var text by remember { mutableStateOf("") }
     var show by remember { mutableStateOf(false) }
     val random1 = Random.nextInt(1, 100)
     var textCorrect = remember { mutableStateOf("") }
+    var num by remember { mutableStateOf(0) }
     Column(){
         TextField(text,
             label = { Text("") },
@@ -22,10 +23,12 @@ fun SecretNumberApp() {
                 show = false
             })
         Button(onClick = {
+            num ++
             show = true
         }){
             Text("Validar")
         }
+        Text("Intents: $num")
         Text(textCorrect.value)
 
         if (show) {
