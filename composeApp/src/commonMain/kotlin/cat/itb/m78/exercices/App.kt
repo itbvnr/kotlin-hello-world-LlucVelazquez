@@ -17,5 +17,7 @@ internal fun App() = AppTheme {
     //GoodMoorningAndNight()
     //SayHelloScreeenApp()
     //SecretNumberApp()
-    SecretNumberApp2()
+    //SecretNumberApp2()
+    //DiceRollerApp()
+    CounterApp()
 }
