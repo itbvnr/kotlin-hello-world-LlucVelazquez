@@ -19,5 +19,7 @@ internal fun App() = AppTheme {
     //SecretNumberApp()
     //SecretNumberApp2()
     //DiceRollerApp()
-    CounterApp()
+    //CounterApp2()
+    //CounterVavScreen()
+    ManualNav2()
 }
