@@ -21,5 +21,6 @@ internal fun App() = AppTheme {
     //DiceRollerApp()
     //CounterApp2()
     //CounterVavScreen()
-    ManualNav2()
+    //ManualNav2()
+    LibNavScreenSample()
 }

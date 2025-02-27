@@ -1,4 +1,4 @@
-package cat.itb.m78.exercices
+/*package cat.itb.m78.exercices
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Button
@@ -61,4 +61,4 @@ fun Screen3(navigateToScreen4: (String) -> Unit) {
 @Composable
 fun Screen4(message: String) {
     Text(message)
-}
+}*/
