@@ -1,13 +1,18 @@
-package cat.itb.m78.exercices.ex3
+package cat.itb.m78.exercices.pt2
 import kotlinx.serialization.Serializable
-import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
+
+
+
+
+
 
 class goodJokes(val id: Int, val type: String, val setup: String, val punchline: String)
 
 
 @Serializable
 data class Rectangle(val height: Double, val width: Double)
+
 
 fun main(){
     val serializer = Json {

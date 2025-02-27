@@ -2,6 +2,7 @@ package cat.itb.m78.exercices
 
 
 import androidx.compose.runtime.*
+import cat.itb.m78.exercices.pt2.JokesScreen
 import cat.itb.m78.exercices.theme.AppTheme
 
 @Composable
@@ -22,5 +23,6 @@ internal fun App() = AppTheme {
     //CounterApp2()
     //CounterVavScreen()
     //ManualNav2()
-    LibNavScreenSample()
+    //LibNavScreenSample()
+    JokesScreen()
 }
