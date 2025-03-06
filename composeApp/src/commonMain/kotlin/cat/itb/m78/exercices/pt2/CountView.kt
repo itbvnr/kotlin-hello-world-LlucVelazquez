@@ -11,11 +11,9 @@ import androidx.compose.material3.Text
 fun CountView() {
     val settings: Settings = Settings()
     var count: Int? = settings.getIntOrNull("key")
-    //var count: Int? = settings["key"]
     if (count == null) {
         count = 0
     } else {
-        //settings.putInt("key", count + 1)
         settings["key"] = count + 1
     }
     Column {
