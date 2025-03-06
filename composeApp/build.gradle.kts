@@ -59,6 +59,8 @@ kotlin {
             implementation("io.ktor:ktor-client-core:3.0.2")
             implementation("io.ktor:ktor-client-cio:3.0.2")
             implementation("io.ktor:ktor-client-content-negotiation:3.0.2")
+            implementation("com.russhwolf:multiplatform-settings-no-arg:1.3.0")
+            implementation("com.russhwolf:multiplatform-settings-serialization:1.3.0")
         }
 
         commonTest.dependencies {
@@ -106,7 +108,6 @@ android {
 
 //https://developer.android.com/develop/ui/compose/testing#setup
 dependencies {
-    implementation(libs.androidx.material3.android)
     androidTestImplementation(libs.androidx.uitest.junit4)
     debugImplementation(libs.androidx.uitest.testManifest)
 }
@@ -133,6 +134,7 @@ compose.desktop {
         }
     }
 }
+
 
 tasks.register<ComposeHotRun>("runHot") {
     mainClass.set("HotrunKt")

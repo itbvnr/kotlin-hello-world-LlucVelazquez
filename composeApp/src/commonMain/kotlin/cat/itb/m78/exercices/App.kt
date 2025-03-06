@@ -2,6 +2,7 @@ package cat.itb.m78.exercices
 
 
 import androidx.compose.runtime.*
+import cat.itb.m78.exercices.pt2.CountView
 import cat.itb.m78.exercices.pt2.JokesScreen
 import cat.itb.m78.exercices.theme.AppTheme
 
@@ -24,5 +25,6 @@ internal fun App() = AppTheme {
     //CounterVavScreen()
     //ManualNav2()
     //LibNavScreenSample()
-    JokesScreen()
+    //JokesScreen()
+    CountView()
 }
