@@ -10,6 +10,7 @@ internal fun App() = AppTheme {
     //Box(Modifier.fillMaxSize()){
     //    Text("Your app goes here!", Modifier.align(Alignment.Center), color = Color.Blue)
     //}
-    CountView()
+    //CountView()
     //RememberMyName()
+    CountriesScreen()
 }
