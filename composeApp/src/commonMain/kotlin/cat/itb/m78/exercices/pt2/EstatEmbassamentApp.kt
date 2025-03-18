@@ -1,5 +1,6 @@
 package cat.itb.m78.exercices.pt2
 
+import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -39,3 +40,5 @@ object EmbassamentApi {
     }
     suspend fun list() = client.get(url).body<List<Embassament>>()
 }
+@Composable
+fun EstatEmbassamentApp() {}
