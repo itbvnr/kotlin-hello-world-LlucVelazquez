@@ -1,17 +1,32 @@
 package cat.itb.m78.exercices.pt2
 
+import androidx.compose.runtime.mutableStateOf
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import androidx.lifecycle.viewmodel.compose.viewModel
 import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.plugins.contentnegotiation.*
 import io.ktor.client.request.*
 import io.ktor.serialization.kotlinx.json.*
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 
 @Serializable
 data class Embassament(
-    val cosa: String
+    val estaci: String, val dia: String, val nivell_absolut: String, val percentatge_volum_embassat: String, val volum_embassat: String
 )
+class EstatEmbassamentViewModel() : ViewModel(){
+    val embassaments = mutableStateOf<List<Embassament>?>(null)
+    init {
+        viewModelScope.launch(Dispatchers.Default) {
+            embassaments.value = EmbassamentApi.list()
+        }
+    }
+    fun printEmbassaments() { viewModelScope.launch(Dispatchers.Default) {embassaments.value = EmbassamentApi.list()} }
+}
 
 object EmbassamentApi {
     val url = "https://analisi.transparenciacatalunya.cat/resource/gn9e-3qhr.json"
