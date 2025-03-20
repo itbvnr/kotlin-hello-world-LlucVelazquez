@@ -12,5 +12,6 @@ internal fun App() = AppTheme {
     //}
     //CountView()
     //RememberMyName()
-    CountriesScreen()
+    //CountriesScreen()
+    EstatEmbassamentScreen()
 }
